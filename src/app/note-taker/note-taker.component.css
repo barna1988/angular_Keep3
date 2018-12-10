@@ -1,0 +1,22 @@
+.keep-note-taker-panel {
+    width: 55vw;
+    margin: auto;
+}
+.keep-note-taker-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.keep-note--button{
+    display : flex;
+    justify-content: flex-end;
+}
+.keep-note-taker-panel {
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+}
+.error-message {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

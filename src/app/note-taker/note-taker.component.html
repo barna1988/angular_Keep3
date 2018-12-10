@@ -1,4 +1,23 @@
 <!-- Label to display any error messages -->
-<label class="error-message">{{ errMessage }}</label>
+<label class='error-message'>{{ errMessage }}</label>
 
 <!-- Expansion panel to add new notes -->
+<div class='keep-note-taker-panel'>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>{{title}}</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class='keep-note-taker-wrapper'>
+            <mat-form-field>
+                <input matInput name='title' [(ngModel)]='note.title' placeholder='Enter Note Title'>
+            </mat-form-field>
+            <mat-form-field>
+                <textarea matInput name='text' [(ngModel)]='note.text' placeholder='Enter Note Text'></textarea>
+            </mat-form-field>
+            <div class='keep-note--button'>
+                <button mat-raised-button (click)='addNotes()' color='primary'>Done</button>
+            </div>
+        </div>
+    </mat-expansion-panel>
+</div>
